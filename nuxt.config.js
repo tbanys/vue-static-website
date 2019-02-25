@@ -13,7 +13,14 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700'
+      }
+    ]
   },
 
   /*
@@ -24,7 +31,9 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    '@/assets/scss/app.scss' // use our build, as entered via app.scss
+  ],
 
   /*
   ** Plugins to load before mounting the App
@@ -40,6 +49,10 @@ module.exports = {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt'
   ],
+  bootstrapVue: {
+    bootstrapCSS: false, // or `css`
+    bootstrapVueCSS: false // or `bvCSS`
+  },
   /*
   ** Axios module configuration
   */

@@ -1,0 +1,9 @@
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+
+@import "header/base";
+@import "images/base";
+@import "footer/base";

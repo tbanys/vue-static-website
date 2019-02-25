@@ -1,0 +1,48 @@
+.header {
+  padding: 100px 0 130px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.topbar {
+  border-bottom: 1px solid #eeeeee;
+  color: #666666;
+  font-size: .85rem;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: #666666;
+    &:hover,
+    &:focus {
+      color: #666666;
+    }
+  }
+  .icon {
+    &.email {
+      width: 15px;
+      height: 15px;
+    }
+    &.phone {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding: 0 20px;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-right: 25px;
+      img {
+        display: inline-block;
+        vertical-align: -3px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
