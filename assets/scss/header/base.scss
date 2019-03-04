@@ -1,16 +1,17 @@
 .header {
-  padding: 100px 0 130px;
+  padding: 60px 0 100px;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.4rem;
+  color: #000;
 }
 
 .topbar {
   border-bottom: 1px solid #eeeeee;
   color: #666666;
-  font-size: .85rem;
-  padding: 5px 0;
+  font-size: .9rem;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   a {

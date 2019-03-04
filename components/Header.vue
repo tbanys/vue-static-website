@@ -40,7 +40,7 @@
         <div class="row">
           <div class="col text-center"> 
             <h1><b>Medinės Durys</b></h1>
-            <p>Vidaus / Lauko / <b>Medinės Durys</b></p>
+            <p>Vidaus ir lauko medinės durys</p>
           </div>
         </div>
       </div>

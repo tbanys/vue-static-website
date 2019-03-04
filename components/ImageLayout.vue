@@ -1,5 +1,5 @@
 <template>
-  <div class="container imageLayout">
+  <div class="container-fluid imageLayout">
     <div class="row">
       <image-item v-for="image in images" :key="image" :url="image" />
     </div>
