@@ -58,7 +58,7 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: 'http://medurys.test/wp-json/wp/v2'
+    baseURL: 'https://api.flickr.com/services'
   },
 
   /*

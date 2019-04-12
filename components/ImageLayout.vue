@@ -31,16 +31,27 @@ export default {
   },
   methods: {
     async fetchImages() {
-      const images = await this.$axios.$get('media?per_page=30')
-      this.images = this.loopImages(images)
+      const params = {
+        method: 'flickr.photosets.getPhotos',
+        api_key: '567d27c46a9b55c64dfd98a3ead6d07e',
+        photoset_id: '72157704540684422',
+        user_id: '169598058@N03',
+        extras: 'url_o',
+        page: 1,
+        format: 'json',
+        nojsoncallback: 1,
+        per_page: 30
+      }
+      const images = await this.$axios.$get('rest', { params })
+      this.images = this.loopImages(images.photoset.photo)
     },
     loopImages(images) {
       const arr = []
       images.forEach(item => {
         arr.push({
-          src: item.media_details.sizes.full.source_url,
-          w: item.media_details.sizes.full.width,
-          h: item.media_details.sizes.full.height
+          src: item.url_o,
+          w: item.width_o,
+          h: item.height_o
         })
       })
       return arr
