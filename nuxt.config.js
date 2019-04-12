@@ -38,7 +38,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [{ src: '~/plugins/photo-swipe.js', ssr: false }],
 
   /*
   ** Nuxt.js modules
@@ -58,6 +58,7 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: 'http://medurys.test/wp-json/wp/v2'
   },
 
   /*

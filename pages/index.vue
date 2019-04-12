@@ -16,6 +16,9 @@ export default {
     Header,
     ImageLayout,
     Footer
+  },
+  data() {
+    return {}
   }
 }
 </script>

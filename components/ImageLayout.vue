@@ -1,38 +1,49 @@
 <template>
   <div class="container-fluid imageLayout">
-    <div class="row">
-      <image-item v-for="image in images" :key="image" :url="image" />
+    <div v-if="images.length" class="row">
+      <div
+        v-for="(image, index) in images"
+        :key="image.id"
+        class="col-12 col-sm-6 col-md-3"
+        :src="image.src"
+      >
+        <div class="square_container">
+          <div
+            class="square preview-img-item"
+            :style="'background-image: url(' + image.src + ')'"
+            @click="$photoswipe.open(index, images)"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import ImageItem from '~/components/ImageItem.vue'
-
 export default {
-  components: {
-    ImageItem
-  },
   data() {
     return {
-      images: [
-        'https://i.ibb.co/PGtTVvx/17.jpg',
-        'https://i.ibb.co/ZHvpjfz/16.jpg',
-        'https://i.ibb.co/nmTzkV5/15.jpg',
-        'https://i.ibb.co/LCH6hgn/14.jpg',
-        'https://i.ibb.co/52PpjXB/13.jpg',
-        'https://i.ibb.co/V2hYBCv/12.jpg',
-        'https://i.ibb.co/3vX4NZF/10.jpg',
-        'https://i.ibb.co/L1f56b5/9.jpg',
-        'https://i.ibb.co/5FtMVVL/8.jpg',
-        'https://i.ibb.co/wzBZmSs/7.jpg',
-        'https://i.ibb.co/9hHqtxX/6.jpg',
-        'https://i.ibb.co/c8y3n2s/5.jpg',
-        'https://i.ibb.co/D8n8Zqd/4.jpg',
-        'https://i.ibb.co/6BSbHjH/3.jpg',
-        'https://i.ibb.co/xqbzh8D/2.jpg',
-        'https://i.ibb.co/XzbknCm/1.jpg'
-      ]
+      images: []
+    }
+  },
+  created() {
+    this.fetchImages()
+  },
+  methods: {
+    async fetchImages() {
+      const images = await this.$axios.$get('media?per_page=30')
+      this.images = this.loopImages(images)
+    },
+    loopImages(images) {
+      const arr = []
+      images.forEach(item => {
+        arr.push({
+          src: item.media_details.sizes.full.source_url,
+          w: item.media_details.sizes.full.width,
+          h: item.media_details.sizes.full.height
+        })
+      })
+      return arr
     }
   }
 }
