@@ -15,25 +15,6 @@
           <a href="mail:banys.rimas@gmail.com">banys.rimas@gmail.com</a>
         </li>
       </ul>
-      <ul>
-        <li class="nav-item dropdown">
-          <a 
-            id="navbarDropdown" 
-            class="dropdown-toggle" 
-            href="#" 
-            role="button" 
-            data-toggle="dropdown" 
-            aria-haspopup="true" 
-            aria-expanded="false"
-          >
-            Lietuvių
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Lietuvių</a>
-            <a class="dropdown-item" href="#">English</a>
-          </div>
-        </li>
-      </ul>
     </div>
     <div class="header">
       <div class="container">
