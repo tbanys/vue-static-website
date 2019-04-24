@@ -19,6 +19,18 @@ export default {
   },
   data() {
     return {}
+  },
+  head() {
+    return {
+      title: 'Medurys',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Medinės vidaus ir lauko durys'
+        }
+      ]
+    }
   }
 }
 </script>
