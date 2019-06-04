@@ -56,7 +56,8 @@ module.exports = {
     bootstrapVueCSS: false // or `bvCSS`
   },
   sitemap: {
-    routes: ['/']
+    generate: true,
+    hostname: 'https://www.medurys.lt'
   },
   /*
   ** Axios module configuration
