@@ -36,7 +36,7 @@ export default {
         api_key: '567d27c46a9b55c64dfd98a3ead6d07e',
         photoset_id: '72157704540684422',
         user_id: '169598058@N03',
-        extras: 'url_o',
+        extras: 'url_c',
         page: 1,
         format: 'json',
         nojsoncallback: 1,
@@ -49,9 +49,9 @@ export default {
       const arr = []
       images.forEach(item => {
         arr.push({
-          src: item.url_o,
-          w: item.width_o,
-          h: item.height_o
+          src: item.url_c,
+          w: item.url_c,
+          h: item.url_c
         })
       })
       return arr
