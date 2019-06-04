@@ -12,7 +12,7 @@
         </li>
         <li>
           <img class="icon email" src="~/assets/images/mail.svg">
-          <a href="mail:banys.rimas@gmail.com">banys.rimas@gmail.com</a>
+          <a href="mail:rimas.medurys@gmail.com">rimas.medurys@gmail.com</a>
         </li>
       </ul>
     </div>

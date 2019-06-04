@@ -11,7 +11,7 @@
               <li>Adresas: Raseinių r. Viduklės sen. Virgainių kaim.</li>
               <li>Telefonas: <a href="tel:+370 610 41 935">+370 610 41 935</a></li>
               <li>Telefonas: <a href="tel:+370 610 41 935">+370 615 13 932</a></li>
-              <li>El. paštas: <a href="mail:banys.rimas@gmail.com">banys.rimas@gmail.com</a></li>
+              <li>El. paštas: <a href="mail:rimas.medurys@gmail.com">rimas.medurys@gmail.com</a></li>
             </ul>
             <br>
             <ul>

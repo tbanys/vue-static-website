@@ -22,12 +22,12 @@ export default {
   },
   head() {
     return {
-      title: 'Medurys',
+      title: 'Medurys - vidaus ir lauko medinės durys',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Medinės vidaus ir lauko durys'
+          content: 'Medinės vidaus ir lauko durys. Aukščiausios kokybės medžio masyvo durys. Individualus dizainas, dydis ir spalvos.'
         }
       ]
     }
