@@ -55,6 +55,9 @@ module.exports = {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false // or `bvCSS`
   },
+  sitemap: {
+    routes: ['/']
+  },
   /*
   ** Axios module configuration
   */
