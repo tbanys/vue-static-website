@@ -48,7 +48,8 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
-    ['@nuxtjs/google-tag-manager', { id: 'GTM-5TD4F5F' }]
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-5TD4F5F' }],
+    '@nuxtjs/sitemap'
   ],
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
