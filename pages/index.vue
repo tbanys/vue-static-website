@@ -28,6 +28,10 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Medinės vidaus ir lauko durys. Aukščiausios kokybės medžio masyvo durys. Individualus dizainas, dydis ir spalvos.'
+        },
+        {
+          name: 'google-site-verification',
+          content: '5lo4R86EblBBDoWeX6sQEFkVpkw8jWbMOYd-S18vTao'
         }
       ]
     }
